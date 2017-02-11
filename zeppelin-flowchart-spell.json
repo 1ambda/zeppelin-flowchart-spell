@@ -1,0 +1,12 @@
+{
+  "type" : "SPELL",
+  "name" : "zeppelin-flowchart-spell",
+  "description": "Draw flowchart using http://flowchart.js.org",
+  "artifact" : "/Users/lambda/github/1ambda/zeppelin-flowchart-spell",
+  "license" : "Apache-2.0",
+  "icon" : "<i class='fa fa-random'></i>",
+  "spell": {
+    "magic": "%flowchart",
+    "usage": "%flowchart <TEXT>"
+  }
+}

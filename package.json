@@ -1,0 +1,35 @@
+{
+  "name": "zeppelin-flowchart-spell",
+  "version": "0.0.1",
+  "description": "Draw flowchart using http://flowchart.js.org",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1ambda/zeppelin-flowchart-spell.git"
+  },
+  "keywords": [
+    "zeppelin",
+    "spell"
+  ],
+  "author": "1ambda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1ambda/zeppelin-flowchart-spell/issues"
+  },
+  "homepage": "https://github.com/1ambda/zeppelin-flowchart-spell#readme",
+  "dependencies": {
+    "raphael": "2.2.0",
+    "flowchart.js": "^1.6.5",
+    "zeppelin-spell": "*"
+  },
+  "helium": {
+    "icon" : "<i class='fa fa-random'></i>",
+    "spell": {
+      "magic": "%flowchart",
+      "usage": "%flowchart <TEXT>"
+    }
+  }
+}
