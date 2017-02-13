@@ -19,8 +19,12 @@ export default class FlowchartSpell extends SpellBase {
          * the callback function will executed when the DOM is ready.
          */
         const callback = (targetElemId) => {
-            let diagram = flowchart.parse(paragraphText)
-            diagram.drawSVG(targetElemId, getOption())
+            try {
+                let diagram = flowchart.parse(paragraphText)
+                diagram.drawSVG(targetElemId, getOption())
+            } catch (error) {
+                throw new Error(`Failed to parse flowchart text \n${paragraphText}`)
+            }
         }
 
         /**
